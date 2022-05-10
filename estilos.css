@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'mifuente';
+    src: url(fuentes/Calculator.ttf);
+}
+
+#marco {
+    /* margin: 150px; */
+    /* para poder ponerlo en el centro de la pantalla */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(63, 63, 63);
+    width: 400px, 70px;
+    height: 400px;
+    font-family: 'mifuente';
+    font-weight: bold;
+    border-radius: 10px;
+    /* border-style: solid; */
+}
+
+
+/* *Para poder marcar todos los botones de el HTML */
+
+#marco td input[type="button"] {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 3.5px;
+}
+
+#pantalla {
+    border-style: none;
+    background: #5E7461;
+    margin: 5px;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 50px;
+    /* para poner el texto a la derecha */
+    text-align: right;
+}
+
+
+/* .c {
+    background: #a42424;
+    font-size: 100px;
+}
+ */
+
+
+/* 
+!Profe esto lo consegui aqui recuerde que le habia preguntado jejej
+!https://www.diariodeunprogramador.net/desactivar-las-flechas-de-los-inputs-numbers/ 
+*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 2px;
+}
